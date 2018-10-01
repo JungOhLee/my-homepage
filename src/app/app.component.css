@@ -1,0 +1,58 @@
+/* ------------------------------------------------------------------ */
+/* Proficiency Section
+/* ------------------------------------------------------------------ */
+
+#proficiency {
+   background: #fff;
+   padding-top: 90px;
+   padding-bottom: 72px;
+   overflow: hidden;
+}
+
+#proficiency a, #proficiency a:visited  { color: #11ABB0; }
+#proficiency a:hover, #proficiency a:focus { color: #313131; }
+
+#proficiency h1 {
+   font: 18px/24px 'opensans-bold', sans-serif;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   line-height: 2.2em;
+}
+#proficiency h1.title {
+  line-height: 42px;
+  margin-bottom: 12px;
+  letter-spacing: -1px;
+  font: 38px 'opensans-bold', sans-serif;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+#proficiency h1 span {
+   border-bottom: 3px solid #11ABB0;
+   padding-bottom: 6px;
+}
+#proficiency h3 {
+   font: 25px/30px 'opensans-bold', sans-serif;
+}
+
+#proficiency .header-col { padding-top: 9px; }
+#proficiency .main-col { padding-right: 10%; }
+
+.education, .work {
+   margin-bottom: 48px;
+   padding-bottom: 24px;
+   border-bottom: 1px solid #E8E8E8;
+}
+#proficiency .info {
+   font: 16px/24px 'librebaskerville-italic', serif;
+   color: #6E7881;
+   margin-bottom: 18px;
+   margin-top: 9px;
+}
+#proficiency .info span {
+   margin-right: 5px;
+   margin-left: 5px;
+}
+#proficiency .date {
+   font: 15px/24px 'opensans-regular', sans-serif;
+   margin-top: 6px;
+}

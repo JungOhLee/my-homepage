@@ -20,12 +20,21 @@
             "tsConfig": "src/tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/js"
             ],
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "src/js/modernizr.js",
+              "src/js/waypoints.js",
+              "src/js/magnific-popup.js",
+              "src/js/jquery-1.10.2.min.js",
+              "src/js/jquery-migrate-1.2.1.min.js",
+              "src/js/jquery.flexslider.js",
+              "src/js/jquery.fittext.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -74,10 +83,22 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [],
+            "scripts": [
+              "js/modernizr.js",
+              "js/jquery-1.10.2.min.js",
+              "js/jquery-migrate-1.2.1.min.js",
+              "js/jquery.flexslider.js",
+              "js/waypoints.js",
+              "js/jquery.fittext.js",
+              "js/magnific-popup.js",
+              "js/doubletaptogo.js",
+              "js/spin.js",
+              "js/init.js"
+            ],
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/js"
             ]
           }
         },

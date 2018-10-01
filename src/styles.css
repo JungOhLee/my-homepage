@@ -1,1 +1,6 @@
 /* You can add global styles to this file, and also import other style files */
+@import "assets/css/default.css";
+@import "assets/css/fonts.css";
+@import "assets/css/layout.css";
+@import "assets/css/magnific-popup.css";
+@import "assets/css/media-queries.css";

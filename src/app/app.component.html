@@ -1,20 +1,281 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<!-- Header
+ ================================================== -->
+<header id="home" #header>
 
+  <nav id="nav-wrap" [ngClass]="{'opaque': isHeaderOpaque}" *ngIf="!isHeaderHidden">
+
+    <a class="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
+    <a class="mobile-btn" href="#" title="Hide navigation">Hide navigation</a>
+
+    <ul id="nav" class="nav">
+      <li class="current"><a class="smoothscroll" href="#home">Home</a></li>
+      <li><a class="smoothscroll" href="#about">About</a></li>
+      <li><a class="smoothscroll" href="#upcoming">Upcoming</a></li>
+      <li><a class="smoothscroll" href="#proficiency">Proficiencies</a></li>
+    </ul>
+    <!-- end #nav -->
+
+  </nav>
+  <!-- end #nav-wrap -->
+
+  <div class="row banner">
+    <div class="banner-text">
+      <h1 class="responsive-headline">JO LEE</h1>
+      <div class="row">
+        <div class="four columns">
+          <h2>Medical Doctor</h2>
+        </div>
+        <div class="four columns">
+          <h2>Data Scientist</h2>
+        </div>
+        <div class="four columns">
+          <h2>Front-End Developer</h2>
+        </div>
+      </div>
+      <h3>Jung Oh Lee from South Korea, <br>believing that science can change the world better. Learn more <a class="smoothscroll" href="#about">about me</a>.</h3>
+      <hr />
+      <ul class="social">
+        <li><a href="https://github.com/JungOhLee"><i class="fa fa-github"></i></a></li>
+        <li><a href="https://www.facebook.com/jungoh.lee.16"><i class="fa fa-facebook"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/jolee-the-md"><i class="fa fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <p class="scrolldown">
+    <a class="smoothscroll" href="#about"><i class="icon-down-circle"></i></a>
+  </p>
+
+</header>
+<!-- Header End -->
+
+<!-- About Section
+================================================== -->
+<section id="about">
+
+  <div class="row">
+
+    <div class="four columns main-col">
+
+      <h1>About me</h1>
+      <p>
+        <span>{{age}} YO Male in Seoul and Nonsan</span><br><br>
+        <span>Dreaming to make the world healthier with genomic and information technology</span><br><br>
+        <span>Interested in Genomics, Precision Medicine, Machine Learning, Web & Mobile App technology</span>
+      </p>
+
+    </div>
+
+    <div class="eight columns">
+
+      <h2>Education</h2>
+
+      <p>
+        <span>2008 - 2010 Deajeon Science High School</span>
+        <br>
+        <span>2010 - 2016 Seoul National University College of Medicine</span>
+        <br>
+        <span>2017 -   Korea National Open University Graduate School Dept. of Bioinformatics and Statistics</span>
+        <br>
+      </p>
+
+      <div class="row">
+
+        <div class="columns contact-details">
+
+          <h2>Contact Details</h2>
+          <p class="address">
+            <span>Jung Oh Lee</span><br>
+            <span>Gayagok Public Health Clinic<br>
+                    20 Deogeun-ro Nonsan-si Chungcheongnam-do, 33020, South Korea
+                  </span><br>
+            <span>(041)-746-8251</span><br>
+            <span>anyone@website.com</span>
+          </p>
+
+        </div>
+
+        <div class="columns download">
+          <p>
+            <a href="#" class="button"><i class="fa fa-download"></i>Download Resume</a>
+          </p>
+        </div>
+
+      </div>
+      <!-- end row -->
+
+    </div>
+    <!-- end .main-col -->
+
+  </div>
+
+</section>
+<!-- About Section End-->
+
+
+<!-- Upcoming Section
+  ================================ -->
+<section id="upcoming" style="padding: 90px 0 10px; background: #fff;">
+  <div class="row add-bottom">
+
+    <div class="twelve columns">
+
+      <h1>Upcoming Projects</h1>
+      <br>
+      <h3><span class="lead">Dictionary Lens - Chinese Character Dictionary</span></h3>
+      <p class="lead add-bottom">
+        Mobile dictionary app for Chinese character based on character recognition with deep learning
+      </p>
+      <h3><span class="lead">Korea Clinical Datathon</span></h3>
+      <p class="lead add-bottom">
+        Data Analysis competition with MIMIC-III dataset <br> MIMIC-III: <a href="https://mimic.physionet.org/">https://mimic.physionet.org/</a><br> Datathon: <a href="http://datathon.konect.or.kr/">http://datathon.konect.or.kr/</a>
+      </p>
+      <h3><span class="lead">Digital Health Hackathon</span></h3>
+      <p class="lead add-bottom">
+        Hospital specific communication channel <br> Hackathon: <a href="https://www.digitalhealthhack.org/">https://www.digitalhealthhack.org/</a>
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<!-- Resume Section
+   ================================================== -->
+<section id="proficiency">
+  <div class="row">
+    <div class="twelve columns">
+      <h1 class="title">Proficiencies</h1>
+      <br>
+    </div>
+  </div>
+  <!-- Front-End Development
+      ----------------------------------------------- -->
+  <div class="row education">
+
+    <div class="three columns header-col">
+      <h1><span>Front-End Development</span></h1>
+    </div>
+
+    <div class="nine columns main-col">
+
+      <div class="row item">
+
+        <div class="twelve columns">
+          <h3>HTML, CSS, JavaScript</h3>
+          <p>This website's github <a href="https://github.com/JungOhLee/my-homepage">link</a></p>
+        </div>
+
+      </div>
+      <!-- item end -->
+
+      <div class="row item">
+
+        <div class="twelve columns">
+          <h3>Angular</h3>
+          <p>Reference project <a href="#">link - not yet working</a></p>
+        </div>
+
+      </div>
+      <!-- item end -->
+      <div class="row item">
+
+        <div class="twelve columns">
+          <h3>Comming Soon</h3>
+          <ul class="disc">
+            <li>React</li>
+            <li>React Native</li>
+          </ul>
+        </div>
+
+      </div>
+      <!-- item end -->
+
+    </div>
+    <!-- main-col end -->
+
+  </div>
+  <!-- End Front-End Development -->
+
+
+  <!-- Data Science
+      ----------------------------------------------- -->
+  <div class="row work">
+
+    <div class="three columns header-col">
+      <h1><span>Data Science</span></h1>
+    </div>
+
+    <div class="nine columns main-col">
+
+      <div class="row item">
+
+        <div class="twelve columns">
+
+          <h3>Statistical Analysis</h3>
+          <p class="info">R, Python</p>
+          <p>
+            Can cover wide range of statistical analysis, e.g. visualizing data, hypothesis testing(t-test, wilcoxon test, chi-square test, etc), regression with generalized linear models, survival analysis, etc. <br>
+            <a href="http://nbviewer.jupyter.org/github/JungOhLee/naver_competition/blob/master/BreastAnalysisInPython.ipynb">sample code</a>
+          </p>
+
+        </div>
+
+      </div>
+      <!-- item end -->
+
+      <div class="row item">
+
+        <div class="twelve columns">
+          <h3>Machine Learning & Deep Learning</h3>
+          <p class="info">Python, <em>Scikit-Learn, Tensorflow, Keras</em></p>
+          <p>
+            Can cover variety of models, e.g. Naive-Bayes, Random Forest, CNN, GAN, etc <br>
+            <a href="http://nbviewer.jupyter.org/github/JungOhLee/naver_competition/blob/master/BreastAnalysisInPython.ipynb">sample code</a>
+          </p>
+
+        </div>
+
+      </div>
+      <!-- item end -->
+
+    </div>
+    <!-- main-col end -->
+
+  </div>
+  <!-- End Proficiency -->
+
+</section>
+<!-- Resume Section End-->
+
+
+
+<!-- footer
+ ================================================== -->
+<footer>
+  <div class="row">
+
+    <div class="twelve columns">
+      <div class="twelve columns add-bottom">
+
+        <h3>Let's be better everyday</h3>
+
+        <blockquote>
+          <p>Rome wasn't built in a day</p>
+          <cite>Cervantes, Don Quixote</cite>
+        </blockquote>
+      </div>
+      <ul class="copyright">
+        <li>Edited by <a href="#about">JOLEE</a></li>
+        <li>Original Design by <a href="http://www.styleshout.com/" title="Styleshout" target="_blank">Styleshout</a></li>
+      </ul>
+
+    </div>
+
+    <div id="go-top" style="display: block;"><a class="smoothscroll" title="Back to Top" href="#home"><i class="icon-up-open"></i></a></div>
+
+  </div>
+
+</footer>
+<!-- Footer End-->
