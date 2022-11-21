@@ -143,5 +143,8 @@
       }
     }
   },
-  "defaultProject": "my-homepage"
+  "defaultProject": "my-homepage",
+  "cli": {
+    "analytics": false
+  }
 }
